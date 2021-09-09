@@ -1,0 +1,18 @@
+﻿@model Denis_Wilfredo_Lopez_Ortega.Models.ViewModel.CajeroViewModel
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Cajero Automatico</h2>
+
+@using (Html.BeginForm("Comprobacion", "Cajero", FormMethod.Post))
+{
+    <label>Monto a retirar</label>
+    <br />
+    <br />
+    @Html.TextBoxFor(m => m.Monto, new { required = "required", type = "number" })
+
+    <br />
+    <br />
+    <input type="submit" />
+}
+

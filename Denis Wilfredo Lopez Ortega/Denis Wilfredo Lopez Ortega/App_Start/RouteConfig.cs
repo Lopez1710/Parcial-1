@@ -16,7 +16,7 @@ namespace Denis_Wilfredo_Lopez_Ortega
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Cajero", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
